@@ -1,5 +1,4 @@
-<h1>Primary relation</h1>
-## Pets ##
+# Norm 1 - Normalization Process for Vetinary Office
 PetName, PetType, PetBreed, PetDOB
 ## Owners ##
 OwnerLastName, OwnerFirstName, OwnerPhone, OwnerEmail
