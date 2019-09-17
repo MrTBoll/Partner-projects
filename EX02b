@@ -1,0 +1,5 @@
+#Primary relation
+##Pets
+PetName, PetType, PetBreed, PetDOB
+##Owners
+OwnerLastName, OwnerFirstName, OwnerPhone, OwnerEmail
