@@ -1,27 +1,27 @@
-/* *** SQL-Query-CH03-37 *** */
+/* Query-CH03-37 by TrevorBollech and WendyRosenquist */
 SELECT Department, Count(*) AS NumberOfEmployees
 FROM EMPLOYEE
 GROUP BY Department
 HAVING COUNT(*) > 1;
 
-/* *** SQL-Query-CH03-38 *** */
+/* Query-CH03-38 by TrevorBollech and WendyRosenquist */
 SELECT Department, Count(*) AS NumberOfEmployees
 FROM EMPLOYEE
 WHERE EmployeeNumber <= 10
 GROUP BY Department
 HAVING COUNT(*) > 1;
 
-/* *** SQL-Query-CH03-39 *** */
+/* Query-CH03-39 by TrevorBollech and WendyRosenquist */
 SELECT FirstName, LastName
 FROM EMPLOYEE
 WHERE EmployeeNumber IN (6, 10, 11, 16, 17);
 
-/* *** SQL-Query-CH03-40 *** */
+/* Query-CH03-40 by TrevorBollech and WendyRosenquist */
 SELECT DISTINCT EmployeeNumber
 FROM ASSIGNMENT
 WHERE HoursWorked > 50;
 
-/* *** SQL-Query-CH03-41 *** */
+/* Query-CH03-41 by TrevorBollech and WendyRosenquist */
 SELECT FirstName, LastName
 FROM EMPLOYEE
 WHERE EmployeeNumber IN
@@ -29,12 +29,12 @@ WHERE EmployeeNumber IN
 FROM ASSIGNMENT
 WHERE HoursWorked > 50);
 
-/* *** SQL-Query-CH03-42 *** */
+/* Query-CH03-42 by TrevorBollech and WendyRosenquist */
 SELECT DISTINCT ProjectID
 FROM PROJECT
 WHERE Department = 'Accounting';
 
-/* *** SQL-Query-CH03-43 *** */
+/* Query-CH03-43 by TrevorBollech and WendyRosenquist */
 SELECT DISTINCT EmployeeNumber
 FROM ASSIGNMENT
 WHERE HoursWorked > 40
@@ -43,7 +43,7 @@ AND ProjectID IN
 FROM PROJECT
 WHERE Department = 'Accounting');
 
-/* *** SQL-Query-CH03-44 *** */
+/* Query-CH03-44 by TrevorBollech and WendyRosenquist */
 SELECT FirstName, LastName
 FROM EMPLOYEE
 WHERE EmployeeNumber IN
@@ -55,6 +55,6 @@ AND ProjectID IN
 FROM PROJECT
 WHERE Department = 'Accounting'));
 
-/* *** SQL-Query-CH03-45 *** */
+/* Query-CH03-45 by TrevorBollech and WendyRosenquist */
 SELECT FirstName, LastName, ProjectID, HoursWorked
 FROM EMPLOYEE, ASSIGNMENT;
