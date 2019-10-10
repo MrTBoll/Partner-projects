@@ -1,29 +1,29 @@
-/* *** SQL-Query-CH03-08 *** */
+/* Query-CH03-08 by TrevorBollech and WendyRosenquist */
 SELECT *
 FROM PROJECT
 WHERE StartDate = '05/10/2017';
 
-/* *** SQL-Query-CH03-09 *** */
+/* Query-CH03-09 by TrevorBollech and WendyRosenquist */
 SELECT *
 FROM PROJECT
 WHERE MaxHours > 135;
 
-/* *** SQL-Query-CH03-10 *** */
+/* Query-CH03-10 by TrevorBollech and WendyRosenquist */
 SELECT FirstName, LastName, Department, OfficePhone
 FROM EMPLOYEE
 WHERE Department = 'Accounting';
 
-/* *** SQL-Query-CH03-11 *** */
+/* Query-CH03-11 by TrevorBollech and WendyRosenquist */
 SELECT FirstName, LastName, Department, OfficePhone
 FROM EMPLOYEE
 ORDER BY Department;
 
-/* *** SQL-Query-CH03-12 *** */
+/* Query-CH03-12 by TrevorBollech and WendyRosenquist */
 SELECT FirstName, LastName, Department, OfficePhone
 FROM EMPLOYEE
 ORDER BY Department DESC;
 
-/* *** SQL-Query-CH03-13 *** */
+/* Query-CH03-13 by TrevorBollech and WendyRosenquist */
 SELECT FirstName, LastName, Department, OfficePhone
 FROM EMPLOYEE
 ORDER BY Department DESC, LastName ASC;
